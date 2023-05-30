@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="header-container">
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <a href="{% url 'home' %}">Mefis</a>
+            </div>
+            <div class="main-menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="menu">
+                    <li><a href="catalog.html">Всі товари</a></li>
+                    <li><a href="catalog.html">Стільці</a></li>
+                    <li><a href="catalog.html">Столи</a></li>
+                    <li><a href="catalog.html">Лампи</a></li>
+                    <li><a href="catalog.html">Ліжка</a></li>
+                    <li><a href="catalog.html">Дивани</a></li>
+                </ul>
+            </div>
+
+            <div class="options-container">
+                <a href="../cart">
+                    <img src="/img/icons8-shopping-bag-50%201.png">
+                </a>
+                <span class="quantity"></span>
+            </div>
+        </nav>
+    </header>
+</div>
+
+
+<div class="main-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="header-text">
+                    <h2>Створи свій дім мрії</h2>
+                    <h6>Купуйте меблі онлайн за вигідними цінами, стильними меблями та декором ля дому</h6>
+                    <div class="white-button">
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="home-demo">
+    <h3>Нові товари</h3>
+    <h1>Щойно прибули</h1>
+    <div class="carousel-wrapper">
+        <div class="wrapper">
+            <div class="item">
+                <img src="/img/new-sofa-photo.jpg">
+                <a href="product.html">
+                    <div class="item-description">
+                        <h2>Назва товару</h2>
+                        <h2>$ 300</h2>
+                        <i class="arrow right"></i>
+                    </div>
+                </a>
+                <div class="item-description-2">
+                    <h2>Невеликий опис</h2>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="item">
+                <img src="/img/stul-bryan-wood-beliy-10003627.jpg">
+                <a href="product.html">
+                    <div class="item-description">
+                        <h2>Назва товару</h2>
+                        <h2>$ 300</h2>
+                        <i class="arrow right"></i>
+                    </div>
+                </a>
+                <div class="item-description-2">
+                    <h2>Невеликий опис</h2>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="item">
+                <img src="/img/oversized_furniture_jean_philippe_delberghe_auf_unsplash_m24_full_m36_1025%201.png">
+                <a href="product.html">
+                    <div class="item-description">
+                        <h2>Назва товару</h2>
+                        <h2>$ 200</h2>
+                        <i class="arrow right"></i>
+                    </div>
+                </a>
+                <div class="item-description-2">
+                    <h2>Невеликий опис</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="six-categories">
+    <div class="category">
+        <img class="product-pic" src="/img/1.png">
+        <a href="catalog.html">
+            <div class="category-name">
+                <h1>Лампа</h1>
+            </div>
+            <div class="white-button-category">
+                <a href="#">Дізнатися</a>
+            </div>
+        </a>
+    </div>
+    <div class="category">
+        <img class="product-pic" src="/img/2.png">
+        <a href="catalog.html">
+            <div class="category-name">
+                <h1>Стілець</h1>
+            </div>
+            <div class="white-button-category">
+                <a href="#">Дізнатися</a>
+            </div>
+        </a>
+    </div>
+    <div class="category">
+        <img class="product-pic" src="/img/3.png">
+        <a href="catalog.html">
+            <div class="category-name">
+                <h1>Стіл</h1>
+            </div>
+            <div class="white-button-category">
+                <a href="#">Дізнатися</a>
+            </div>
+        </a>
+    </div>
+    <div class="category">
+        <img class="product-pic" src="/img/4.png">
+        <a href="catalog.html">
+            <div class="category-name">
+                <h1>Шафи</h1>
+            </div>
+            <div class="white-button-category">
+                <a href="#">Дізнатися</a>
+            </div>
+        </a>
+    </div>
+    <div class="category">
+        <img class="product-pic" src="/img/5.png">
+        <a href="catalog.html">
+            <div class="category-name">
+                <h1>Ліжко</h1>
+            </div>
+            <div class="white-button-category">
+                <a href="#">Дізнатися</a>
+            </div>
+        </a>
+    </div>
+    <div class="category">
+        <img class="product-pic" src="/img/6.png">
+        <a href="catalog.html">
+            <div class="category-name">
+                <h1>Диван</h1>
+            </div>
+            <div class="white-button-category">
+                <a href="#">Дізнатися</a>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<section id="email-subscription">
+    <div class="welcome">
+        <h2>Підписатися на розсилання</h2>
+        <p>Введіть електрону адресу та отримайте знижку 10% на ваше наступне замовлення</p>
+        <form action="">
+            <input type="email" name="" placeholder="Введіть вашу пошту">
+
+            <button class="email-button"><i class="arrow-2 right"></i></button>
+        </form>
+    </div>
+</section>
+
+<footer class="padding_4x">
+    <div class="flex">
+        <div class="website-name">
+            <h3>MEFIS</h3>
+        </div>
+        <div class="website-info">
+            <h3>Контактна інформація</h3>
+            <p>+ 38 050 203 91 32</p>
+            <p>howlxfamily@gmail.com</p>
+            <p>м. Київ, вул. Хрещатик 42</p>
+        </div>
+
+        <div class="footer-email">
+            <p>
+                Підпишіться на розсилання та отримайте повідомлення щодо знижок
+            </p>
+            <form action="">
+                <input type="email" name="" placeholder="Введіть вашу пошту">
+
+                <button class="email-button-footer"><i class="arrow-3 right"></i></button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

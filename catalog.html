@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/catalog.css"></link>
+    <title>Title</title>
+</head>
+<body>
+<div class="header-container">
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <a href="{% url 'home' %}">Mefis</a>
+            </div>
+            <div class="main-menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="menu">
+                    <li><a href="catalog.html">Всі товари</a></li>
+                    <li><a href="catalog.html">Стільці</a></li>
+                    <li><a href="catalog.html">Столи</a></li>
+                    <li><a href="catalog.html">Лампи</a></li>
+                    <li><a href="catalog.html">Ліжка</a></li>
+                    <li><a href="catalog.html">Дивани</a></li>
+                </ul>
+            </div>
+
+            <div class="options-container">
+                <a href="../cart">
+                    <img src="/img/icons8-shopping-bag-50%201.png">
+                </a>
+                <span class="quantity"></span>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<div class="catalog">
+    <div class="categories">
+
+        <div class="catalog-responsive-options">
+            <input type="checkbox" id="menu-catalog-toggle">
+            <label for="menu-catalog-toggle" class="menu-catalog-icon"><img class="filter-image"
+                                                                            src="../../static/main/img/filter.png"></label>
+
+            <ul class="menu-catalog">
+
+                <li>
+                    <h3 class="categories">Категорії</h3>
+                    <form>
+                        <input type="checkbox" class="category-operator"
+                               value="{{ category.name }}">
+                        <label>Всі товари</label>
+                    </form>
+                    <form>
+                        <input type="checkbox" class="category-operator"
+                               value="{{ category.name }}">
+                        <label>Стільці</label>
+                    </form>
+                    <form>
+                        <input type="checkbox" class="category-operator"
+                               value="{{ category.name }}">
+                        <label>Столи</label>
+                    </form>
+                    <form>
+                        <input type="checkbox" class="category-operator"
+                               value="{{ category.name }}">
+                        <label>Лампи</label>
+                    </form>
+                    <form>
+                        <input type ="checkbox" class="category-operator"
+                        value="{{ category.name }}">
+                        <label>Ліжка</label>
+                    </form>
+                    <form>
+                        <input type="checkbox" class="category-operator"
+                               value="{{ category.name }}">
+                        <label>Дивани</label>
+                    </form>
+
+                    <h3 class="sub-category">Підкатегорії</h3>
+                    <form>
+                        <input type="checkbox"
+                               >
+                        <label>Всі товари</label>
+                    </form>
+                    <form>
+                        <input type="checkbox"
+                               >
+                        <label>Домашні</label>
+                    </form>
+                    <form>
+                        <input type="checkbox"
+                               >
+                        <label>Офісні</label>
+                    </form>
+                </li>
+            </ul>
+            <p class="filter-text">Фільтри</p>
+        </div>
+
+        <div class="sorting-menu">
+            <input type="checkbox" id="sorting-menu-toggle">
+
+            <label for="sorting-menu-toggle" class="sorting-menu-icon"><img class="sorting-image"
+                                                                            src="/img/up-down.png"></label>
+            <ul class="sorting-catalog">
+                <li>
+                    <h3 class="categories">Сортування</h3>
+                    <form>
+                        <input type="checkbox" class="category-operator"
+                               value="{{ category.name }}">
+                        <label>Ціна - мін.</label>
+                    </form>
+                    <form>
+                        <input type="checkbox" class="category-operator"
+                               value="{{ category.name }}"
+                               >
+                        <label>Ціна - макс.</label>
+                    </form>
+                </li>
+            </ul>
+            <p class="sorting-text">Сортування</p>
+        </div>
+
+
+    </div>
+
+    <div class="shop-grid">
+        <a href="product.html">
+            <div class="product-wrapper">
+
+                <div class="product-photo">
+                    <img class="product-photo-placed" src="/img/stul-bryan-wood-beliy-10003627.jpg">
+                </div>
+                <div class="product-text">
+                    <div class="product-text-name">
+                        <h1>Звичайний текст</h1>
+                    </div>
+                    <div class="product-text-price">
+                        <h1>100 грн</h1>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product.html">
+            <div class="product-wrapper">
+
+                <div class="product-photo">
+                    <img class="product-photo-placed" src="/img/oversized_furniture_jean_philippe_delberghe_auf_unsplash_m24_full_m36_1025%201.png">
+                </div>
+                <div class="product-text">
+                    <div class="product-text-name">
+                        <h1>Теж текст</h1>
+                    </div>
+                    <div class="product-text-price">
+                        <h1>400 грн</h1>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product.html">
+            <div class="product-wrapper">
+
+                <div class="product-photo">
+                    <img class="product-photo-placed" src="/img/new-sofa-photo.jpg">
+                </div>
+                <div class="product-text">
+                    <div class="product-text-name">
+                        <h1>Новий диван</h1>
+                    </div>
+                    <div class="product-text-price">
+                        <h1>300 грн</h1>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<footer class="padding_4x">
+    <div class="flex">
+        <div class="website-name">
+            <h3>MEFIS</h3>
+        </div>
+        <div class="website-info">
+            <h3>Контактна інформація</h3>
+            <p>+ 38 050 203 91 32</p>
+            <p>howlxfamily@gmail.com</p>
+            <p>м. Київ, вул. Хрещатик 42</p>
+        </div>
+
+        <div class="footer-email">
+            <p>
+                Підпишіться на розсилання та отримайте повідомлення щодо знижок
+            </p>
+            <form action="">
+                <input type="email" name="" placeholder="Введіть вашу пошту">
+
+                <button class="email-button-footer"><i class="arrow-3 right"></i></button>
+            </form>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

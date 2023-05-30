@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/product.css">
+    <title>Mefis: Main Page</title>
+</head>
+
+<div class="header-container">
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <a href="/index.html">Mefis</a>
+            </div>
+            <div class="main-menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="menu">
+                    <li><a href="catalog.html">Всі товари</a></li>
+                    <li><a href="catalog.html">Стільці</a></li>
+                    <li><a href="catalog.html">Столи</a></li>
+                    <li><a href="catalog.html">Лампи</a></li>
+                    <li><a href="catalog.html">Ліжка</a></li>
+                    <li><a href="catalog.html">Дивани</a></li>
+                </ul>
+            </div>
+
+            <div class="options-container">
+                <a href="../cart">
+                    <img src="/img/icons8-shopping-bag-50%201.png">
+                </a>
+                <span class="quantity"></span>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<div class="product-page">
+        <div class="product-images">
+                <div class="small-image-1">
+                    <img src="/img/beliy-stul-2.jpg">
+                </div>
+                <div class="small-image-2">
+                    <img src="/img/beliy-stul-3.jpg">
+                </div>
+                <div class="big-image">
+                    <img src="/img/stul-bryan-wood-beliy-10003627.jpg" alt="gg">
+                </div>
+        </div>
+        <div class="product-name">
+
+            <div class="name-and-category">
+
+                <h5>Назва</h5>
+                <p>Категорія</p>
+
+            </div>
+            <div class="price">
+                <p>200 грн</p>
+            </div>
+        </div>
+        <div class="product-description">
+            <p>Опис продукту</p>
+        </div>
+        <div class="product-options">
+            <div class="size-option">
+                <div class="option-name">
+                    <h3>Розміри</h3>
+                </div>
+                <div class="option-setting">
+                    <p>см. 100 х 15 х 13</p>
+                </div>
+                <div class="select-option">
+                    <input type="checkbox" id="options-toggle-size">
+                    <label for="options-toggle-size" class="options-menu-icon">
+                        <i class="selector-arrow"></i>
+                    </label>
+                    <ul class="options-menu">
+                        <li><p>см.150х60х13</p></li>
+                        <li><p>см.150х60х13</p></li>
+                        <li><p>см.150х60х13</p></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="fabric-option">
+                <div class="option-name">
+                    <h3>Оббивка</h3>
+                </div>
+                <div class="option-setting">
+                    <p>Поліестер</p>
+                </div>
+                <div class="select-option">
+                    <input type="checkbox" id="options-toggle-fabric">
+                    <label for="options-toggle-fabric" class="options-menu-icon">
+                        <i class="selector-arrow"></i>
+                    </label>
+                    <ul class="options-menu">
+                        <li><p>см.150х60х13</p></li>
+                        <li><p>см.150х60х13</p></li>
+                        <li><p>см.150х60х13</p></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="add-to-cart-options">
+                <div class="quantity">
+                    <button id="increment-btn" class="button-plus" onclick="increment()">+</button>
+                    <h2 id="counter-value">1</h2>
+                    <button id="decrement-btn" class="button-minus" onclick="decrement()">-</button>
+                </div>
+                <div class="add-button">
+                    <button class="add-to-cart-button"><p>Додати до кошику</p></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<div class="home-demo">
+    <h3>Вам також може сподобатись</h3>
+    <div class="carousel-wrapper">
+        <div class="wrapper">
+            <div class="item">
+                <img src="/img/new-sofa-photo.jpg">
+                <a href="product.html">
+                    <div class="item-description">
+                        <h2>Назва товару</h2>
+                        <h2>$ 300</h2>
+                        <i class="arrow right"></i>
+                    </div>
+                </a>
+                <div class="item-description-2">
+                    <h2>Невеликий опис</h2>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="item">
+                <img src="/img/stul-bryan-wood-beliy-10003627.jpg">
+                <a href="product.html">
+                    <div class="item-description">
+                        <h2>Назва товару</h2>
+                        <h2>$ 300</h2>
+                        <i class="arrow right"></i>
+                    </div>
+                </a>
+                <div class="item-description-2">
+                    <h2>Невеликий опис</h2>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="item">
+                <img src="/img/oversized_furniture_jean_philippe_delberghe_auf_unsplash_m24_full_m36_1025%201.png">
+                <a href="product.html">
+                    <div class="item-description">
+                        <h2>Назва товару</h2>
+                        <h2>$ 200</h2>
+                        <i class="arrow right"></i>
+                    </div>
+                </a>
+                <div class="item-description-2">
+                    <h2>Невеликий опис</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="padding_4x">
+    <div class="flex">
+        <div class="website-name">
+            <h3>MEFIS</h3>
+        </div>
+        <div class="website-info">
+            <h3>Контактна інформація</h3>
+            <p>+ 38 050 203 91 32</p>
+            <p>howlxfamily@gmail.com</p>
+            <p>м. Київ, вул. Хрещатик 42</p>
+        </div>
+
+        <div class="footer-email">
+            <p>
+                Підпишіться на розсилання та отримайте повідомлення щодо знижок
+            </p>
+            <form action="">
+                <input type="email" name="" placeholder="Введіть вашу пошту">
+
+                <button class="email-button-footer"><i class="arrow-3 right"></i></button>
+            </form>
+        </div>
+    </div>
+</footer>
+<body>
+
+</body>
+</html>
